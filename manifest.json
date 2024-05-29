@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Profile Picture Changer",
+    "version": "1.0",
+    "description": "Replace profile pictures on LinkedIn with a specified image.",
+    "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/linkedin_16.png",
+        "48": "icons/linkedin_48.png",
+        "128": "icons/linkedin_128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+  }
+  

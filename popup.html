@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Picture Changer</title>
+    <style>
+        body {
+            width: 300px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h3 {
+            margin-top: 0;
+        }
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button#changeButton {
+            width: 100%;
+            padding: 10px;
+            margin: 2px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button#resetButton {
+            width: 100%;
+            padding: 10px;
+            margin: 2px;
+            background-color: #ff3c00;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h3>Change Profile Picture</h3>
+    <input type="text" id="imageUrl" placeholder="Enter image URL">
+    <button id="changeButton">Change</button>
+    <button id="resetButton">Reset Images</button>
+    <script src="popup.js"></script>
+</body>
+</html>
